@@ -1,0 +1,7 @@
+obj
+bin
+.vs
+packages
+*.user
+App_Data
+*.pubxml
