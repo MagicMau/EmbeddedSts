@@ -108,7 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\EmbeddedSigningCert.pfx" />
+    <Content Include="App_Data\EmbeddedStsUsers.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\dttnl-tmc-dws-test-embeddedsts - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dttnl-tmc-dws-test-embeddedsts - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dttnl-tmc-dws-test-embeddedsts - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -118,7 +124,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
